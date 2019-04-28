@@ -49,6 +49,11 @@ function results(){
 
 	if (failed)
 		result.value = "";
+	else
+	{
+		var size = (2000 - result.value.length);
+		document.getElementById("size").innerHTML = (size < 0 ? "<font color=\"#FC4646\">" : '') + size + " characters."
+	}
 }
 
 function copy(){
