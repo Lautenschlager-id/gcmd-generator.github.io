@@ -24,7 +24,7 @@ function results(){
 	var result = document.getElementById("result");
 
 	document.getElementById("copy").innerHTML = "Copy to clipboard";
-	var failed = !cmd;
+	var failed = !(cmd && cmd.length > 1);
 
 	if (!failed)
 	{
