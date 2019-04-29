@@ -35,7 +35,7 @@
 		</div>
 		<div class="container">
 			<label class="title">3 - Command name</label>
-			<label class="description">Must start with a letter. Only accepts letters, numbers, _ and -.<hr><sub>pattern: %a[%w_-]+</sub></label>
+			<label class="description">Must start with a letter. Only accepts letters, numbers, _ and -. ; <sub>pattern: %a[%w_-]+</sub></label>
 			<textarea id="cmd" oninput="checkPattern(this);" placeholder="Ex: boom" maxlength="20" required></textarea>
 		</div>
 		<div class="container">
@@ -50,12 +50,12 @@
 		</div>
 		<div class="container">
 			<label class="title">6 - Description</label>
-			<label class="description">The command description to be displayed in <strong>!ghelp</strong>.</label>
+			<label class="description">The command description to be displayed in <strong>!ghelp</strong>.</label>
 			<textarea id="description" oninput="results();" placeholder="Ex: displays a bomb image"></textarea>
 		</div>
 		<div class="container">
 			<label class="title">7 - Lua Script</label>
-			<label class="description">The script that will be executed. Don't forget that the variable <strong>parameters</strong> includes the content next to the command.</label>
+			<label class="description">The script that will be executed. Don't forget that the variable <strong>parameters</strong> includes the content next to the command.</label>
 			<br>
 			<textarea id="code"></textarea>
 			<script src="codemirror/editor.js"></script>
