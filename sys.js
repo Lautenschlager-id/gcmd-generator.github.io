@@ -32,7 +32,7 @@ function results(){
 		var len = result.value.length;
 	
 		if (code && code.length > 3)
-			result.value += " script`" + normalizeText(code) + "`";
+			result.value += " script`" + code + "`";
 		if (value)
 			result.value += " value[[" + normalizeText(value) + "]]";
 		if (title)
